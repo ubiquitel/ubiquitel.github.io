@@ -78,31 +78,6 @@ gulp.task('copy', function(cb) {
 });
 
 // ////////////////////////////////////////////////
-// WATCHIFY
-// ////////////////////////////////////////////////
-
-gulp.task('watchify', function() {
-  var watcher = watchify(bundler);
-  return watcher
-  .on('error', gutil.log.bind(gutil, 'Browserify Error'))
-  .on('update', function() {
-    watcher.bundle()
-    .pipe(source('bundle.js'))
-    .pipe(buffer())
-    .pipe(sourcemaps.init({loadMaps: true}))
-    .pipe(sourcemaps.write())
-    .pipe(gulp.dest('./public/js'))
-    .pipe(connect.reload());
-
-    gutil.log('Updated Javascript sources');
-  })
-  .bundle()
-  .pipe(source('bundle.js'))
-  .pipe(gulp.dest('./public/js'));
-});
-
-
-// ////////////////////////////////////////////////
 // SCRIPTS
 // ////////////////////////////////////////////////
 
@@ -144,8 +119,8 @@ gulp.task('sass:watch', function() {
 // ////////////////////////////////////////////////
 gulp.task('server', function() {
   connect.server({
-    root: 'public',
-    port: 5050,
+    root: ['public', 'node_modules'],
+    port: 5000,
     livereload: true
   });
 });
