@@ -1,0 +1,48 @@
+{
+  "name": "ubiquitel.github.io",
+  "version": "1.0.0",
+  "description": "ubiquitel official website",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ubiquitel/ubiquitel.github.io.git"
+  },
+  "keywords": [
+    "web",
+    "ubiquitel"
+  ],
+  "author": "Hidekazu Saegusa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ubiquitel/ubiquitel.github.io/issues"
+  },
+  "homepage": "https://github.com/ubiquitel/ubiquitel.github.io#readme",
+  "devDependencies": {
+    "browser-sync": "^2.10.1",
+    "browserify": "^12.0.1",
+    "del": "^1.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-connect": "^2.2.0",
+    "gulp-if": "^1.2.5",
+    "gulp-plumber": "^1.0.1",
+    "gulp-postcss": "^5.1.10",
+    "gulp-sass": "^2.1.1",
+    "gulp-sourcemaps": "^1.5.2",
+    "gulp-uglify": "^1.5.1",
+    "gulp-util": "^3.0.6",
+    "gulp-watch": "^4.3.1",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.6.1"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.5",
+    "jquery": "^2.1.4",
+    "lodash": "^3.10.1"
+  }
+}
