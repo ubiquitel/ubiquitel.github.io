@@ -8,7 +8,7 @@ https://nodejs.org
 You may be required to input your github account credential.
 
 3. Change directory to your local repository. As default you should be in your user folder. In that case, just  
-`cd rhizome`
+`cd ubiquitel.github.io.git`
 
 4. Install gulp globally with the command below.
 `npm install gulp -g`
@@ -20,4 +20,4 @@ on your terminal to install all node module dependencies.
 
 6. `gulp dev`
 on your terminal to start gulp task for development.  
-Input `localhost:5050` in your browser.
+Input `localhost:5000` in your browser.
