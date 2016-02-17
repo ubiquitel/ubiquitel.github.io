@@ -1,21 +1,25 @@
 nav.navbar {
     border: 0;
     border-radius: 0;
-    // position: fixed;
+    width: 100%;
+    position: fixed;
 }
 
+.contents-container {
+    padding-top: 50px;
 
-#project {
-    // background: green;
-}
+    #project {
+        // background: green;
+    }
 
-#team {
-    padding: 20px;
-    background-color: #C3B091;
-}
+    #team {
+        padding: 20px;
+        background-color: #C3B091;
+    }
 
-#contact {
-    padding: 20px;
-    background-color: #233B6C;
-    color: white;
+    #contact {
+        padding: 20px;
+        background-color: #233B6C;
+        color: white;
+    }
 }
