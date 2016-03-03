@@ -5,6 +5,7 @@
     <title>Ubiquitel</title>
     <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" type="text/css"></link>
     <link rel="stylesheet" href="style.css" type="text/css"></link>
+    <script type="text/javascript" src="bootstrap/dist/bootstrap.js"></script>
     <script type="text/javascript" src="lib/p5.js"></script>
     <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
     <script type="text/javascript" src="js/index.js"></script>
@@ -16,36 +17,48 @@
         <div class="navbar-header">
           <a class="navbar-brand" href="#">Ubiquitel</a>
         </div>
-        <div class="nav-list">
+        <div id="navigation-bar" class="nav-list">
           <ul class="nav navbar-nav">
-            <li class="active"><a href="#project">What's Ubiquitel?</a></li>
+            <li><a href="#project">What's Ubiquitel?</a></li>
             <li><a href="#team">Team</a></li>
             <li><a href="#contact">Contact</a></li>
-        </ul>
+          </ul>
         </div>
         <div class="language-toggle pull-right">
-            <ul class="nav navbar-nav">
-                <li><a href="">EN</a></li>
-                <li><a href="">JP</a></li>
-            </ul>
+          <ul class="nav navbar-nav">
+            <li><a href="">EN</a></li>
+            <li><a href="">JP</a></li>
+          </ul>
         </div>
       </div>
     </nav>
-
+    <div class="contents-container" data-spy="scroll" data-target="#navigation-bar">
       <section id="project" class="container-fluid">
         <h3>What's Ubiquitel?</h3>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
-        <p>こんなプロジェクトですよ</p>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>ユビキテル（Ubiquitel）は、指の形をしたリズム楽器です。</p>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+                <p>指にリズムパターンを覚えさせて、あなたのフィンガードラミングを記憶させましょう。</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6">
+                <p>そしていろいろな物や表面を叩かせて、全く新しいグルーヴを生み出しましょう。</p>
+            </div>
+            <div class="col-sm-6"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-6"></div>
+            <div class="col-sm-6">
+                <p>たくさんの指を使って、あなただけの指オーケストラを作りましょう！</p>
+            </div>
+        </div>
       </section>
       <section id="team" class="container-fluid">
         <h3>Meet Team Ubiquitel</h3>
@@ -75,15 +88,9 @@
       </section>
       <section id="contact" class="container-fluid">
         <h3>Contact Us!</h3>
-        <p>れんらく！</p>
-        <p>れんらく！</p>
-        <p>れんらく！</p>
-        <p>れんらく！</p>
-        <p>れんらく！</p>
-        <p>れんらく！</p>
-        <p>れんらく！</p>
-        <p>れんらく！</p>
-        <p>れんらく！</p>
+        <p>このプロジェクトに関する展示等のお問い合わせ・ご意見等は、</p>
+        <p><a href="mailto:ubiquitel.contact@gmail.com">ubiquitel.contact@gmail.com</a></p>
+        <p>までお寄せください。</p>
       </section>
     </div>
   </body>
