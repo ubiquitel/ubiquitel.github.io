@@ -3,23 +3,48 @@ nav.navbar {
     border-radius: 0;
     width: 100%;
     position: fixed;
+    z-index: 1;
 }
 
 .contents-container {
     padding-top: 50px;
-
+    font-family: "ヒラギノ明朝 Pro W3", "Times New Roman";
+    
+    #video {
+      background-color: black; 
+      height: 450px;
+      
+      .placeholder {
+        color: #777;
+        text-align: center;
+        padding-top: 200px;
+      }
+    }
+    
     #project {
-        // background: green;
+        background: #FFF;
+        padding: 20px;
     }
 
     #team {
         padding: 20px;
-        background-color: #C3B091;
+        background-color: #EEE;
+
+        .finger-portrait {
+            text-align: center;
+            width: 200px;
+            height: 400px;
+            opacity: 0.5;
+        }
     }
 
     #contact {
         padding: 20px;
-        background-color: #233B6C;
-        color: white;
+        background-color: rgb(252, 226, 196);
+    }
+    
+    #footer {
+      background: #EEE;
+      padding: 20px;
     }
 }

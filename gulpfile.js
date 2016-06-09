@@ -76,6 +76,34 @@ gulp.task('copy', function(cb) {
 
   cb();
 });
+// ////////////////////////////////////////////////
+// BROWSERIFY+WATCHIFY 
+// ////////////////////////////////////////////////f
+var bundler = browserify({
+  basedir: './src/js/',
+  entries: ['index.js'],
+  debug: true
+});
+
+gulp.task('watchify', function() {
+  var watcher = watchify(bundler);
+  return watcher
+  .on('error', gutil.log.bind(gutil, 'Browserify Error'))
+  .on('update', function() {
+    watcher.bundle()
+    .pipe(source('bundle.js'))
+    .pipe(buffer())
+    .pipe(sourcemaps.init({loadMaps: true}))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./public/js'))
+    .pipe(connect.reload());
+
+    gutil.log('Updated Javascript sources');
+  })
+  .bundle()
+  .pipe(source('bundle.js'))
+  .pipe(gulp.dest('./public/js'));
+});
 
 // ////////////////////////////////////////////////
 // SCRIPTS
@@ -143,5 +171,6 @@ gulp.task('dev', ['config:dev', 'clean'], function() {
   gulp.start('sass:watch');
   gulp.start('scripts');
   gulp.start('scripts:watch');
+  gulp.start('watchify');
   gulp.start('server');
 });
