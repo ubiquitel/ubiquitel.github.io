@@ -1,5 +1,11 @@
 .container-video {
   background: #000000; }
 
+.navigation .nav-list {
+  padding: 20px; }
+  .navigation .nav-list .nav-item {
+    text-align: center;
+    padding: 0px 10px; }
+
 .heel {
   color: #44C014; }
