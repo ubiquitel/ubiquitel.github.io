@@ -15,7 +15,7 @@ body {
       width: 100%;
       max-width: 800px; }
   body .container-details #section-project-detail {
-    padding: 20px; }
+    padding: 40px 20px; }
     body .container-details #section-project-detail h2 {
       text-align: center; }
     body .container-details #section-project-detail .text-align-vertical {
@@ -23,7 +23,7 @@ body {
       top: 150px; }
   body .container-details #section-profile {
     background: #EEEEEE;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center; }
     body .container-details #section-profile .name {
       margin-bottom: 0; }
@@ -33,7 +33,7 @@ body {
       color: #999; }
   body .container-details #section-contact {
     background: #F7F7F7;
-    padding: 20px;
+    padding: 40px 20px;
     text-align: center; }
     body .container-details #section-contact #email {
       font-size: 20px; }

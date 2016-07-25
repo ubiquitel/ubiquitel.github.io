@@ -4,15 +4,16 @@
     <title>Ubiquitel</title>
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script type="text/javascript" src="vendor/jquery-3.1.0.min.js"></script>
   </head>
   <body>
     <nav class="navigation">
       <div class="container">
         <div class="row nav-list hidden-xs">
           <div class="col-sm-2"><img src="assets/logo.svg" alt=""></div>
-          <div class="col-sm-2 nav-item"><h6>ユビキテルとは</h6></div>
-          <div class="col-sm-2 nav-item"><h6>作者紹介</h6></div>
-          <div class="col-sm-2 nav-item"><h6>ご連絡</h6></div>
+          <div class="col-sm-2 nav-item" id="goto-details"><h5>ユビキテルとは</h5></div>
+          <div class="col-sm-2 nav-item" id="goto-profile"><h5>作者紹介</h5></div>
+          <div class="col-sm-2 nav-item" id="goto-contact"><h5>ご連絡</h5></div>
         </div>
       </div>
     </nav>
@@ -65,28 +66,28 @@
         <div class="container" style="max-width: 1024px;">
           <h2 class="padding-bottom">作者紹介</h2>
           <div class="row">
-          <div class="col-sm-4">
-            <h4 class="name">中島 武三志</h4>
-            <h5 class="title">title placeholder</h5>
-            <p>This is a story about me</p>
-            <p>This is a story about me</p>
-            <p>This is a story about me</p>
-            <p>This is a story about me</p>
+            <div class="col-sm-4">
+              <h4 class="name">中島 武三志</h4>
+              <h5 class="title">title placeholder</h5>
+              <p>This is a story about me</p>
+              <p>This is a story about me</p>
+              <p>This is a story about me</p>
+              <p>This is a story about me</p>
+            </div>
+            <div class="col-sm-4">
+              <h4 class="name">後藤 理</h4>
+              <h5 class="title">title placeholder</h5>
+              <p>This is a story about me</p>
+              <p>This is a story about me</p>
+              <p>This is a story about me</p>
+              <p>This is a story about me</p>
+            </div>
+            <div class="col-sm-4">
+              <h4 class="name">三枝 英一</h4>
+              <h5 class="title">Design Technologist</h5>
+              <p>曲がったことが三度の飯と同じくらい好きな準社会適合者。普段はfrog design,inc.のDesign Technologistとして、迫り来る横文字ラッシュに揉まれつつも、まずまず平穏に下っ端サラリーマンを務めている。最近20代後半もいいとこになってきて、元気いっぱいとは行かなくなってきた。</p>
+            </div>
           </div>
-          <div class="col-sm-4">
-            <h4 class="name">後藤 理</h4>
-            <h5 class="title">title placeholder</h5>
-            <p>This is a story about me</p>
-            <p>This is a story about me</p>
-            <p>This is a story about me</p>
-            <p>This is a story about me</p>
-          </div>
-          <div class="col-sm-4">
-            <h4 class="name">三枝 英一</h4>
-            <h5 class="title">Design Technologist</h5>
-            <p>曲がったことが三度の飯と同じくらい好きな準社会適合者。普段はfrog design,inc.のDesign Technologistとして、迫り来る横文字ラッシュに揉まれつつも、まずまず平穏に下っ端サラリーマンを務めている。最近20代後半もいいとこになってきて、元気いっぱいとは行かなくなってきた。</p>
-          </div>
-        </div>
         </div>
       </section>
       <section id="section-contact">
@@ -105,3 +106,15 @@
     </div>
   </body>
 </html>
+
+<script>
+  $('#goto-details').click(function() {
+    $('html, body').animate({scrollTop: $('#section-project-detail').position().top}, 300);
+  });
+  $('#goto-profile').click(function() {
+    $('html, body').animate({scrollTop: $('#section-profile').position().top}, 300);
+  });
+  $('#goto-contact').click(function() {
+    $('html, body').animate({scrollTop: $('#section-contact').position().top}, 300);
+  });
+</script>
