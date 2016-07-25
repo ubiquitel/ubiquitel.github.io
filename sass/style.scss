@@ -1,18 +1,66 @@
-.container-video {
-  background: #000000;
-}
-
-.navigation {
-  .nav-list {
-    padding: 20px;
-    
-    .nav-item {
-      text-align: center;
-      padding: 0px 10px;
+body {
+  font-family: "ヒラギノ明朝 Pro W3", "Times New Roman";
+  
+  .navigation {
+    .nav-list {
+      padding: 20px;
+      
+      .nav-item {
+        text-align: center;
+        padding: 0px 10px;
+      }
     }
   }
-}
 
-.heel {
-  color: #44C014;
+  .container-video {
+    background: #000000;
+    text-align: center;
+    
+    .embedded-video {
+      width: 100%;
+      max-width: 800px;
+    }
+  }
+
+  .container-details {
+    #section-project-detail {
+      padding: 20px;
+    
+      h2 {
+        text-align: center;
+      }      
+      .text-align-vertical {
+        position: relative;
+        top: 150px;
+      }
+    }
+    #section-profile {
+      padding: 20px;
+      text-align: center;
+    }
+    #section-contact {
+      background: #EEE;
+      padding: 20px;
+      text-align: center;
+      
+      #email {
+        font-size: 20px;
+      }
+    }
+  }
+
+  // utils
+  .padding-bottom {
+    padding-bottom: 20px;
+  }
+  
+  .footer {
+    padding: 40px 20px;
+    background: #000;
+    
+    p {
+      color: #FFF;
+      margin: 0;
+    }
+  }
 }

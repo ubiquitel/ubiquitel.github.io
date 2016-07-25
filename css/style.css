@@ -1,11 +1,38 @@
-.container-video {
-  background: #000000; }
-
-.navigation .nav-list {
-  padding: 20px; }
-  .navigation .nav-list .nav-item {
-    text-align: center;
-    padding: 0px 10px; }
-
-.heel {
-  color: #44C014; }
+@charset "UTF-8";
+body {
+  font-family: "ヒラギノ明朝 Pro W3", "Times New Roman"; }
+  body .navigation .nav-list {
+    padding: 20px; }
+    body .navigation .nav-list .nav-item {
+      text-align: center;
+      padding: 0px 10px; }
+  body .container-video {
+    background: #000000;
+    text-align: center; }
+    body .container-video .embedded-video {
+      width: 100%;
+      max-width: 800px; }
+  body .container-details #section-project-detail {
+    padding: 20px; }
+    body .container-details #section-project-detail h2 {
+      text-align: center; }
+    body .container-details #section-project-detail .text-align-vertical {
+      position: relative;
+      top: 150px; }
+  body .container-details #section-profile {
+    padding: 20px;
+    text-align: center; }
+  body .container-details #section-contact {
+    background: #EEE;
+    padding: 20px;
+    text-align: center; }
+    body .container-details #section-contact #email {
+      font-size: 20px; }
+  body .padding-bottom {
+    padding-bottom: 20px; }
+  body .footer {
+    padding: 40px 20px;
+    background: #000; }
+    body .footer p {
+      color: #FFF;
+      margin: 0; }
