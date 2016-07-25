@@ -1,102 +1,107 @@
-<!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8"/>
     <title>Ubiquitel</title>
-    <link rel="stylesheet" href="bootstrap/dist/css/bootstrap.css" type="text/css"></link>
-    <link rel="stylesheet" href="style.css" type="text/css"></link>
-    <script type="text/javascript" src="bootstrap/dist/bootstrap.js"></script>
-    <script type="text/javascript" src="lib/p5.js"></script>
-    <script type="text/javascript" src="jquery/dist/jquery.min.js"></script>
-    <script type="text/javascript" src="js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="vendor/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
-    <nav class="navbar navbar-default">
-      <div class="container-fluid">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <a class="navbar-brand" href="#">Ubiquitel</a>
+    <nav class="navigation">
+      <div class="container">
+        <div class="row nav-list hidden-xs">
+          <div class="col-sm-2"><img src="assets/logo.svg" alt=""></div>
+          <div class="col-sm-2 nav-item"><h6>ユビキテルとは</h6></div>
+          <div class="col-sm-2 nav-item"><h6>作者紹介</h6></div>
+          <div class="col-sm-2 nav-item"><h6>ご連絡</h6></div>
         </div>
-        <!-- <div id="navigation-bar" class="nav-list">
-          <ul class="nav navbar-nav">
-            <li><a href="#project">What's Ubiquitel?</a></li>
-            <li><a href="#team">Team</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div> -->
-        <!-- <div class="language-toggle pull-right">
-          <ul class="nav navbar-nav">
-            <li><a href="">EN</a></li>
-            <li><a href="">JP</a></li>
-          </ul>
-        </div> -->
       </div>
     </nav>
-    <div class="contents-container" data-spy="scroll" data-target="#navigation-bar">
-      <section id="video">
-        <p class="placeholder">びでお、ここにきます</p>
+    <div class="container-video">
+      <div class="container">
+        <video class="embedded-video" autoplay loop>
+          <source src="assets/ubiquitel-pv.mp4" type="video/mp4">
+        </video>
+      </div>
+    </div>
+    <div class="container-details">
+      <section id="section-project-detail">
+        <div class="container" style="max-width: 1024px;">
+          <h2 class="padding-bottom">ユビキテルとは</h2>
+          <div class="row padding-bottom">
+            <div class="col-sm-6">
+              <p class="text-align-vertical">ユビキテル（Ubiquitel）は、指の形をしたリズム楽器です。</p>
+            </div>
+            <div class="col-sm-6">
+              <img width="100%" src="assets/ubiquitel-detail-1.png" alt="image not found">
+            </div>
+          </div>
+          <div class="row padding-bottom">
+            <div class="col-sm-6">
+              <p class="text-align-vertical">ユビにリズムパターンを覚えさせて、あなたのフィンガードラミングを記憶させましょう。</p>
+            </div>
+            <div class="col-sm-6">
+              <img width="100%" src="assets/ubiquitel-detail-2.png" alt="image not found">
+            </div>
+          </div>
+          <div class="row padding-bottom">
+            <div class="col-sm-6">
+              <p class="text-align-vertical">そしていろいろな物や表面を叩かせて、全く新しいグルーヴを生み出しましょう。</p>
+            </div>
+            <div class="col-sm-6">
+              <img width="100%" src="assets/ubiquitel-detail-3.png" alt="image not found">
+            </div>
+          </div>
+          <div class="row padding-bottom">
+            <div class="col-sm-6">
+              <p class="text-align-vertical">たくさんのユビを使って、あなただけのユビオーケストラを作りましょう！</p>
+            </div>
+            <div class="col-sm-6">
+              <img width="100%" src="assets/ubiquitel-detail-4.png" alt="image not found">
+            </div>
+          </div>
+        </div>
       </section>
-      <section id="project" class="container-fluid">
-        <h3>ユビキテルとは？</h3>
-        <div class="row">
-            <div class="col-sm-6">
-                <p>ユビキテル（Ubiquitel）は、指の形をしたリズム楽器です。</p>
-            </div>
-            <div class="col-sm-6"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-              <p>指にリズムパターンを覚えさせて、あなたのフィンガードラミングを記憶させましょう。</p>
-            </div>
-            <div class="col-sm-6">
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-                <p>そしていろいろな物や表面を叩かせて、全く新しいグルーヴを生み出しましょう。</p>
-            </div>
-            <div class="col-sm-6"></div>
-        </div>
-        <div class="row">
-            <div class="col-sm-6">
-              <p>たくさんの指を使って、あなただけの指オーケストラを作りましょう！</p>
-            </div>
-            <div class="col-sm-6"></div>
-        </div>
-      </section>
-      <section id="team" class="container-fluid">
-        <h3>作者紹介</h3>
-        <div class="row">
+      <section id="section-profile">
+        <div class="container" style="max-width: 1024px;">
+          <h2 class="padding-bottom">作者紹介</h2>
+          <div class="row">
           <div class="col-sm-4">
-            <h4>Musashi Boy</h4>
+            <h4 class="name">中島 武三志</h4>
+            <h5 class="title">title placeholder</h5>
             <p>This is a story about me</p>
             <p>This is a story about me</p>
             <p>This is a story about me</p>
             <p>This is a story about me</p>
           </div>
           <div class="col-sm-4">
-            <h4>Satoru Boy</h4>
+            <h4 class="name">後藤 理</h4>
+            <h5 class="title">title placeholder</h5>
             <p>This is a story about me</p>
             <p>This is a story about me</p>
             <p>This is a story about me</p>
             <p>This is a story about me</p>
           </div>
           <div class="col-sm-4">
-            <h4>三枝 英一</h4>
+            <h4 class="name">三枝 英一</h4>
+            <h5 class="title">Design Technologist</h5>
             <p>曲がったことが三度の飯と同じくらい好きな準社会適合者。普段はfrog design,inc.のDesign Technologistとして、迫り来る横文字ラッシュに揉まれつつも、まずまず平穏に下っ端サラリーマンを務めている。最近20代後半もいいとこになってきて、元気いっぱいとは行かなくなってきた。</p>
           </div>
         </div>
+        </div>
       </section>
-      <section id="contact" class="container-fluid">
-        <h3>ご連絡はこちら</h3>
-        <p>このプロジェクトに関する展示等のお問い合わせ・ご意見等は、</p>
-        <p><a href="mailto:ubiquitel.contact@gmail.com">ubiquitel.contact@gmail.com</a></p>
-        <p>までお寄せください。</p>
-      </section>
-      <section id="footer">
-        <p>Copyright 2016 - Team Ubiquitel, All Rights Reserved.</p>
+      <section id="section-contact">
+        <div class="container" style="max-width: 1024px;">
+          <h2 class="padding-bottom">ご連絡はこちら</h2>
+          <p>このプロジェクトに関する展示等のお問い合わせ・ご意見等は、</p>
+          <p id="email"><a href="mailto:ubiquitel.contact@gmail.com">ubiquitel.contact@gmail.com</a></p>
+          <p>までお寄せください。</p>
+        </div>
       </section>
     </div>
-    <script type="text/javascript" src="js/bundle.js"></script>
+    <div class="footer">
+      <div class="container">
+        <p>Copyright 2016 - Team Ubiquitel, All Rights Reserved.</p>
+      </div>
+    </div>
   </body>
 </html>
