@@ -4,12 +4,21 @@ body {
   .navigation {
     background: #F7F7F7;
     .nav-list {
-      padding: 20px;
-      
-      .nav-item {
-        text-align: center;
-        padding: 0px 10px;
+      padding: 0px;
+      .nav-logo {
+        padding: 20px 10px;
       }
+      .nav-item {
+        text-align: right;
+        padding: 20px 10px 0 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        text-decoration: underline;
+      }
+    }
+    
+    .mobile-logo {
+      padding: 10px;
     }
   }
 
@@ -48,6 +57,9 @@ body {
         font-style: italic;
         color: #999;
       }
+      .profile-wrapper {
+        padding-bottom: 20px;
+      }
     }
     #section-contact {
       background: #F7F7F7;
@@ -59,11 +71,6 @@ body {
       }
     }
   }
-
-  // utils
-  .padding-bottom {
-    padding-bottom: 20px;
-  }
   
   .footer {
     padding: 40px 20px;
@@ -73,5 +80,14 @@ body {
       color: #FFF;
       margin: 0;
     }
+  }
+
+  // utils
+  .padding-bottom {
+    padding-bottom: 20px;
+  }
+  
+  .margin-top-mini {
+    margin-top: 10px;
   }
 }

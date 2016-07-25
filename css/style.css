@@ -4,10 +4,17 @@ body {
   body .navigation {
     background: #F7F7F7; }
     body .navigation .nav-list {
-      padding: 20px; }
+      padding: 0px; }
+      body .navigation .nav-list .nav-logo {
+        padding: 20px 10px; }
       body .navigation .nav-list .nav-item {
-        text-align: center;
-        padding: 0px 10px; }
+        text-align: right;
+        padding: 20px 10px 0 10px;
+        margin-bottom: 20px;
+        cursor: pointer;
+        text-decoration: underline; }
+    body .navigation .mobile-logo {
+      padding: 10px; }
   body .container-video {
     background: #000000;
     text-align: center; }
@@ -31,17 +38,21 @@ body {
       margin-top: 5px;
       font-style: italic;
       color: #999; }
+    body .container-details #section-profile .profile-wrapper {
+      padding-bottom: 20px; }
   body .container-details #section-contact {
     background: #F7F7F7;
     padding: 40px 20px;
     text-align: center; }
     body .container-details #section-contact #email {
       font-size: 20px; }
-  body .padding-bottom {
-    padding-bottom: 20px; }
   body .footer {
     padding: 40px 20px;
     background: #000; }
     body .footer p {
       color: #FFF;
       margin: 0; }
+  body .padding-bottom {
+    padding-bottom: 20px; }
+  body .margin-top-mini {
+    margin-top: 10px; }
