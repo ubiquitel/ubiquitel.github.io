@@ -2,6 +2,7 @@ body {
   font-family: "ヒラギノ明朝 Pro W3", "Times New Roman";
   
   .navigation {
+    background: #F7F7F7;
     .nav-list {
       padding: 20px;
       
@@ -35,11 +36,21 @@ body {
       }
     }
     #section-profile {
+      background: #EEEEEE;
       padding: 20px;
       text-align: center;
+      
+      .name {
+        margin-bottom: 0;
+      }
+      .title {
+        margin-top: 5px;
+        font-style: italic;
+        color: #999;
+      }
     }
     #section-contact {
-      background: #EEE;
+      background: #F7F7F7;
       padding: 20px;
       text-align: center;
       

@@ -1,11 +1,13 @@
 @charset "UTF-8";
 body {
   font-family: "ヒラギノ明朝 Pro W3", "Times New Roman"; }
-  body .navigation .nav-list {
-    padding: 20px; }
-    body .navigation .nav-list .nav-item {
-      text-align: center;
-      padding: 0px 10px; }
+  body .navigation {
+    background: #F7F7F7; }
+    body .navigation .nav-list {
+      padding: 20px; }
+      body .navigation .nav-list .nav-item {
+        text-align: center;
+        padding: 0px 10px; }
   body .container-video {
     background: #000000;
     text-align: center; }
@@ -20,10 +22,17 @@ body {
       position: relative;
       top: 150px; }
   body .container-details #section-profile {
+    background: #EEEEEE;
     padding: 20px;
     text-align: center; }
+    body .container-details #section-profile .name {
+      margin-bottom: 0; }
+    body .container-details #section-profile .title {
+      margin-top: 5px;
+      font-style: italic;
+      color: #999; }
   body .container-details #section-contact {
-    background: #EEE;
+    background: #F7F7F7;
     padding: 20px;
     text-align: center; }
     body .container-details #section-contact #email {
