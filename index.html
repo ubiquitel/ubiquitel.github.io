@@ -27,10 +27,14 @@
         <video class="embedded-video" preload="auto" autoplay loop>
           <source src="assets/ubiquitel-pv.mp4" type="video/mp4">
           <source src="assets/ubiquitel-pv.webm" type="video/webm">
-          <source src="assets/ubiquitel-pv.ogv" type="video/ogv">    
-          <p>この動画の再生には、他のGoogle Chrome等、他のブラウザが必要です。</p>
+          <source src="assets/ubiquitel-pv.ogv" type="video/ogv">
+          <p>この動画の再生には、Google Chrome等、他のブラウザが必要です。</p>
         </video>
-        <a href="" class="glyphicon glyphicon-volume-off"></a>
+      </div>
+    </div>
+    <div class="container-mute-button">
+      <div class="container" style="max-width: 800px;">
+        <span id="video-mute" class="glyphicon glyphicon-volume-up pull-right"></span>
       </div>
     </div>
     <div class="container-details">
@@ -121,6 +125,7 @@
 </html>
 
 <script>
+  var muteVideo = false;
   $('#goto-details').click(function() {
     $('html, body').animate({scrollTop: $('#section-project-detail').position().top}, 300);
   });
@@ -129,5 +134,17 @@
   });
   $('#goto-contact').click(function() {
     $('html, body').animate({scrollTop: $('#section-contact').position().top}, 300);
+  });
+  $('#video-mute').click(function() {
+    muteVideo = !muteVideo;
+    if (muteVideo) {
+      $(this).removeClass('glyphicon-volume-up');
+      $(this).addClass('glyphicon-volume-off');
+      $('video').prop('muted', true);
+    } else {
+      $(this).removeClass('glyphicon-volume-off');
+      $(this).addClass('glyphicon-volume-up');
+      $('video').prop('muted', false);
+    }
   });
 </script>

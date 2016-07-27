@@ -21,6 +21,11 @@ body {
     body .container-video .embedded-video {
       width: 100%;
       max-width: 800px; }
+  body .container-mute-button {
+    padding: 10px; }
+    body .container-mute-button .glyphicon {
+      cursor: pointer;
+      font-size: 22px; }
   body .container-details #section-project-detail {
     padding: 40px 20px; }
     body .container-details #section-project-detail h2 {

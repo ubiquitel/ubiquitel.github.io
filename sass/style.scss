@@ -31,6 +31,14 @@ body {
       max-width: 800px;
     }
   }
+  
+  .container-mute-button {
+    padding: 10px;
+    .glyphicon {
+      cursor: pointer;
+      font-size: 22px;
+    }
+  }
 
   .container-details {
     #section-project-detail {
