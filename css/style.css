@@ -20,7 +20,9 @@ body {
     text-align: center; }
     body .container-video .embedded-video {
       width: 100%;
-      max-width: 800px; }
+      height: 100%;
+      max-width: 800px;
+      max-height: 450px; }
   body .container-mute-button {
     padding: 10px; }
     body .container-mute-button .glyphicon {
